@@ -1,0 +1,158 @@
+[
+  {
+    "fecha": "2026-09-30T21:34:36.226Z",
+    "ruta": "/aplicar-descuento?porcentaje=10",
+    "resultado": {
+      "procesado": {
+        "operacion": "aplicar descuento",
+        "porcentaje": 10,
+        "categoria": "todas",
+        "cantidadProductos": 13
+      },
+      "resultado": [
+        {
+          "id": 1,
+          "nombre": "Teclado mecánico ",
+          "precioOriginal": 45000,
+          "precioConDescuento": 40500
+        },
+        {
+          "id": 2,
+          "nombre": "Teclado inalámbrico ",
+          "precioOriginal": 38000,
+          "precioConDescuento": 34200
+        },
+        {
+          "id": 3,
+          "nombre": "Teclado gamer con luces de colores ",
+          "precioOriginal": 98000,
+          "precioConDescuento": 88200
+        },
+        {
+          "id": 4,
+          "nombre": "Mouse Logitech G203",
+          "precioOriginal": 25000,
+          "precioConDescuento": 22500
+        },
+        {
+          "id": 5,
+          "nombre": "Mouse inalámbrico ",
+          "precioOriginal": 14000,
+          "precioConDescuento": 12600
+        },
+        {
+          "id": 6,
+          "nombre": "Mouse gamer con muchas luces",
+          "precioOriginal": 72000,
+          "precioConDescuento": 64800
+        },
+        {
+          "id": 7,
+          "nombre": "Auriculares por cable",
+          "precioOriginal": 60000,
+          "precioConDescuento": 54000
+        },
+        {
+          "id": 8,
+          "nombre": "Auriculares inalámbricos",
+          "precioOriginal": 55000,
+          "precioConDescuento": 49500
+        },
+        {
+          "id": 9,
+          "nombre": "Memoria RAM  16GB DDR4",
+          "precioOriginal": 52000,
+          "precioConDescuento": 46800
+        },
+        {
+          "id": 10,
+          "nombre": "SSD  1TB NVMe",
+          "precioOriginal": 68000,
+          "precioConDescuento": 61200
+        },
+        {
+          "id": 11,
+          "nombre": "Placa de video nvidia rtx  4060 ",
+          "precioOriginal": 520000,
+          "precioConDescuento": 468000
+        },
+        {
+          "id": 12,
+          "nombre": "Procesador AMD Ryzen 5 5600G",
+          "precioOriginal": 180000,
+          "precioConDescuento": 162000
+        },
+        {
+          "id": 13,
+          "nombre": "Monitor Samsung 24\" Full HD",
+          "precioOriginal": 165000,
+          "precioConDescuento": 148500
+        }
+      ]
+    }
+  },
+  {
+    "fecha": "2026-09-30T21:35:58.985Z",
+    "ruta": "/aplicar-descuento?porcentaje=15&categoria=teclados",
+    "resultado": {
+      "procesado": {
+        "operacion": "aplicar descuento",
+        "porcentaje": 15,
+        "categoria": "teclados",
+        "cantidadProductos": 3
+      },
+      "resultado": [
+        {
+          "id": 1,
+          "nombre": "Teclado mecánico ",
+          "precioOriginal": 45000,
+          "precioConDescuento": 38250
+        },
+        {
+          "id": 2,
+          "nombre": "Teclado inalámbrico ",
+          "precioOriginal": 38000,
+          "precioConDescuento": 32300
+        },
+        {
+          "id": 3,
+          "nombre": "Teclado gamer con luces de colores ",
+          "precioOriginal": 98000,
+          "precioConDescuento": 83300
+        }
+      ]
+    }
+  },
+  {
+    "fecha": "2026-09-30T21:36:09.959Z",
+    "ruta": "/aplicar-descuento?porcentaje=15&categoria=teclados",
+    "resultado": {
+      "procesado": {
+        "operacion": "aplicar descuento",
+        "porcentaje": 15,
+        "categoria": "teclados",
+        "cantidadProductos": 3
+      },
+      "resultado": [
+        {
+          "id": 1,
+          "nombre": "Teclado mecánico ",
+          "precioOriginal": 45000,
+          "precioConDescuento": 38250
+        },
+        {
+          "id": 2,
+          "nombre": "Teclado inalámbrico ",
+          "precioOriginal": 38000,
+          "precioConDescuento": 32300
+        },
+        {
+          "id": 3,
+          "nombre": "Teclado gamer con luces de colores ",
+          "precioOriginal": 98000,
+          "precioConDescuento": 83300
+        }
+      ]
+    }
+  }
+]

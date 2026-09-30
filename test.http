@@ -1,0 +1,23 @@
+### GET todos los productos
+GET http://localhost:3000/api/v1/productos
+
+### GET producto por ID
+GET http://localhost:3000/api/v1/productos/1
+
+### GET producto por ID inexistente (404)
+GET http://localhost:3000/api/v1/productos/999
+
+### GET producto con ID inválido (400)
+GET http://localhost:3000/api/v1/productos/abc
+
+### GET procedimiento: descuento a todos los productos
+GET http://localhost:3000/aplicar-descuento?porcentaje=10
+
+### GET procedimiento: descuento solo a una categoría
+GET http://localhost:3000/aplicar-descuento?porcentaje=15&categoria=teclados
+
+### GET procedimiento sin porcentaje (400)
+GET http://localhost:3000/aplicar-descuento
+
+### GET procedimiento con categoría inexistente (404)
+GET http://localhost:3000/aplicar-descuento?porcentaje=10&categoria=sillas

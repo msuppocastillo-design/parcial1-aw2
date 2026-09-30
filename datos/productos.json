@@ -1,0 +1,15 @@
+[
+  { "id": 1,  "nombre": "Teclado mecánico ",   "categoria": "teclados",    "marca": "Redragon", "precio": 45000,  "stock": 12 },
+  { "id": 2,  "nombre": "Teclado inalámbrico ",  "categoria": "teclados",    "marca": "Logitech", "precio": 38000,  "stock": 8 },
+  { "id": 3,  "nombre": "Teclado gamer con luces de colores ", "categoria": "teclados",    "marca": "Redragon",   "precio": 98000,  "stock": 4 },
+  { "id": 4,  "nombre": "Mouse Logitech G203",                "categoria": "ratones",     "marca": "Logitech", "precio": 25000,  "stock": 20 },
+  { "id": 5,  "nombre": "Mouse inalámbrico ",    "categoria": "ratones",     "marca": "Logitech", "precio": 14000,  "stock": 30 },
+  { "id": 6,  "nombre": "Mouse gamer con muchas luces",       "categoria": "ratones",     "marca": "Logitech",    "precio": 72000,  "stock": 6 },
+  { "id": 7,  "nombre": "Auriculares por cable",   "categoria": "auriculares", "marca": "Logitech",   "precio": 60000,  "stock": 10 },
+  { "id": 8,  "nombre": "Auriculares inalámbricos",        "categoria": "auriculares", "marca": "Redragon", "precio": 55000,  "stock": 7 },
+  { "id": 9,  "nombre": "Memoria RAM  16GB DDR4","categoria": "componentes", "marca": "Kingston", "precio": 52000,  "stock": 15 },
+  { "id": 10, "nombre": "SSD  1TB NVMe",          "categoria": "componentes", "marca": "Kingston", "precio": 68000,  "stock": 11 },
+  { "id": 11, "nombre": "Placa de video nvidia rtx  4060 ", "categoria": "componentes", "marca": "NVIDIA",   "precio": 520000, "stock": 3 },
+  { "id": 12, "nombre": "Procesador AMD Ryzen 5 5600G",       "categoria": "componentes", "marca": "AMD",      "precio": 180000, "stock": 5 },
+  { "id": 13, "nombre": "Monitor Samsung 24\" Full HD",       "categoria": "monitores",   "marca": "Samsung",  "precio": 165000, "stock": 9 }
+]
