@@ -1,7 +1,7 @@
 {
-  "name": "parcial1-aw2",
+  "name": "parcial2-aw2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parcial 2 AW2 - API de productos de informática con login (cookies + JWT)",
   "main": "index.mjs",
   "scripts": {
     "dev": "node --watch index.mjs",
@@ -12,6 +12,11 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "express": "5.2.1"
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "express": "5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1"
   }
 }

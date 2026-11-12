@@ -8,6 +8,6 @@ export const rutaNoEncontrada = (req, res) => {
 export const manejadorErrores = (error, req, res, next) => {
     // El detalle del error se muestra solo en el servidor, no se le envía al cliente
     console.error(error)
-    // 500 Internal Server Error: falla inesperada del servidor (ej. archivo JSON ilegible)
+    // 500 Internal Server Error: falla inesperada (ej. archivo JSON ilegible o BD caída)
     res.status(500).json({ mensaje: 'Error interno del servidor' })
 }

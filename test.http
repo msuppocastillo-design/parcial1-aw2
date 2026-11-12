@@ -1,4 +1,22 @@
-### GET todos los productos
+### 1) LOGIN (guarda la cookie "token"; REST Client la reutiliza en las siguientes peticiones)
+POST http://localhost:3000/autenticacion
+Content-Type: application/json
+
+{
+    "usuario": "admin",
+    "pass": "admin123"
+}
+
+### Login con credenciales incorrectas (401)
+POST http://localhost:3000/autenticacion
+Content-Type: application/json
+
+{
+    "usuario": "admin",
+    "pass": "incorrecta"
+}
+
+### GET todos los productos (requiere haber hecho el login)
 GET http://localhost:3000/api/v1/productos
 
 ### GET producto por ID
@@ -21,3 +39,6 @@ GET http://localhost:3000/aplicar-descuento
 
 ### GET procedimiento con categoría inexistente (404)
 GET http://localhost:3000/aplicar-descuento?porcentaje=10&categoria=sillas
+
+### CERRAR SESIÓN (elimina la cookie y redirige al login)
+GET http://localhost:3000/cerrar-sesion

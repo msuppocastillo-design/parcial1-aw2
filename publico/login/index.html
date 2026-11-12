@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/recursos/estilos.css">
+</head>
+<body>
+    <header id="menu"></header>
+    <main class="centrado">
+        <form id="formulario" class="tarjeta">
+            <h1>Iniciar sesión</h1>
+            <div id="mensaje" class="mensaje error oculto"></div>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" required autocomplete="username">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass" required autocomplete="current-password">
+            <button type="submit">Ingresar</button>
+        </form>
+    </main>
+    <script src="/recursos/menu.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>

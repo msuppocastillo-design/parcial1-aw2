@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f6fa; color: #2d3436; }
+.menu { background: #2d3436; display: flex; gap: .25rem; padding: 0 1rem; position: sticky; top: 0; }
+.menu a { color: #dfe6e9; text-decoration: none; padding: 1rem; }
+.menu a:hover, .menu a.activo { background: #3498db; color: #fff; }
+.menu a.salir { margin-left: auto; }
+.menu a.salir:hover { background: #d63031; }
+main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+h1 { margin-top: 0; }
+.tarjeta { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.08); margin-bottom: 1.5rem; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid #eee; }
+th { background: #ecf0f1; }
+label { display: block; font-weight: bold; margin-top: .75rem; }
+input, select { width: 100%; padding: .5rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; margin-top: .25rem; }
+button { margin-top: 1rem; background: #3498db; color: #fff; border: 0; padding: .7rem 1.2rem; border-radius: 4px; font-size: 1rem; cursor: pointer; }
+button:hover { background: #217dbb; }
+a.enlace { color: #3498db; }
+.mensaje { padding: .8rem 1rem; border-radius: 4px; margin: 1rem 0; }
+.mensaje.exito { background: #d5f5e3; color: #1e8449; }
+.mensaje.error { background: #fadbd8; color: #c0392b; }
+.oculto { display: none; }
+.centrado { display: flex; justify-content: center; }
+.centrado .tarjeta { min-width: 320px; }

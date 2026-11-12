@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ítem</title>
+    <link rel="stylesheet" href="/recursos/estilos.css">
+</head>
+<body>
+    <header id="menu"></header>
+    <main>
+        <h1>Detalle del producto</h1>
+        <div id="mensaje" class="mensaje error oculto"></div>
+        <div id="detalle" class="tarjeta oculto">
+            <h2 id="nombre"></h2>
+            <p><strong>Categoría:</strong> <span id="categoria"></span></p>
+            <p><strong>Marca:</strong> <span id="marca"></span></p>
+            <p><strong>Precio:</strong> <span id="precio"></span></p>
+            <p><strong>Stock:</strong> <span id="stock"></span> unidades</p>
+        </div>
+        <a class="enlace" href="/items.html">← Volver al listado</a>
+    </main>
+    <script src="/recursos/menu.js"></script>
+    <script type="module" src="/js/item.js"></script>
+</body>
+</html>

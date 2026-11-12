@@ -20,9 +20,10 @@ export const guardarResultado = async (req, res, next) => {
             }
         }
 
-        // Se agrega la nueva ejecución con fecha y ruta consultada
+        // Se agrega la nueva ejecución con fecha, usuario que la ejecutó y ruta consultada
         historial.push({
             fecha: new Date().toISOString(),
+            usuario: req.usuario?.usuario,
             ruta: req.originalUrl,
             resultado: resultado
         })

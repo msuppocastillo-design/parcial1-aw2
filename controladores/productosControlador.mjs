@@ -1,4 +1,4 @@
-import { leerProductos, buscarProductoporId } from '../servicios/productosServicio.mjs'
+import { leerProductos, buscarProductoPorId } from '../servicios/productosServicio.mjs'
 
 // GET /api/v1/productos -> devuelve todos los productos
 export const obtenerProductos = async (req, res, next) => {
@@ -7,12 +7,12 @@ export const obtenerProductos = async (req, res, next) => {
         // 200 OK: la petición se resolvió correctamente
         res.status(200).json(productos)
     } catch (error) {
-        //  el error al middleware de errores 
+        // El error pasa al middleware de errores
         next(error)
     }
 }
 
-//  devuelve un único producto
+// GET /api/v1/productos/:id -> devuelve un único producto
 export const obtenerProductoPorId = async (req, res, next) => {
     try {
         // Los parámetros de ruta siempre llegan como string, se convierten a número
@@ -23,7 +23,7 @@ export const obtenerProductoPorId = async (req, res, next) => {
             return res.status(400).json({ mensaje: 'El id debe ser un número' })
         }
 
-        const producto = await buscarProductoporId(id)
+        const producto = await buscarProductoPorId(id)
 
         // Si no existe el producto -> 404 Not Found
         if (!producto) {

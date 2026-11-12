@@ -1,6 +1,5 @@
 import { leerProductos } from '../servicios/productosServicio.mjs'
 
-
 // PROCEDIMIENTO: aplica un descuento porcentual a los productos (todos, o solo los de una categoría).
 // No respeta los principios REST porque la ruta expresa una acción (verbo) y no un recurso.
 // Este controlador NO responde: guarda el resultado en res.locals y llama a next()
@@ -11,10 +10,11 @@ export const aplicarDescuento = async (req, res, next) => {
         const porcentaje = Number(req.query.porcentaje)
         const categoria = req.query.categoria
 
-        // Validación: el porcentaje debe ser un número mayor a 0 y menor a 55
+        // Validación: el porcentaje debe ser un número mayor a 0 y menor a 55.
+        // Number(undefined) es NaN y Number('') es 0: ambos quedan rechazados.
         if (Number.isNaN(porcentaje) || porcentaje <= 0 || porcentaje >= 55) {
             return res.status(400).json({
-                mensaje: 'El parámetro "porcentaje" es obligatorio y debe ser un número entre 1 y 55'
+                mensaje: 'El parámetro "porcentaje" es obligatorio y debe ser un número mayor a 0 y menor a 55'
             })
         }
 
@@ -32,7 +32,6 @@ export const aplicarDescuento = async (req, res, next) => {
         }
 
         // Array.prototype.map: crea un nuevo arreglo con el precio calculado,
-        
         // sin modificar los datos originales del archivo JSON
         const productosConDescuento = productos.map((producto) => {
             const precioConDescuento = producto.precio * (1 - porcentaje / 100)

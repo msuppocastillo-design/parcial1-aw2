@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimiento</title>
+    <link rel="stylesheet" href="/recursos/estilos.css">
+</head>
+<body>
+    <header id="menu"></header>
+    <main>
+        <h1>Procedimiento: aplicar descuento</h1>
+        <div class="tarjeta">
+            <p>
+                Este procedimiento calcula el precio final de los productos aplicando un
+                <strong>descuento porcentual</strong> (mayor a 0 y menor a 55). Se puede aplicar a todos
+                los productos o solo a los de una categoría. Los precios originales <strong>no se modifican</strong>:
+                el servidor devuelve el cálculo y guarda el resultado en un archivo JSON.
+            </p>
+            <form id="formulario">
+                <label for="porcentaje">Porcentaje de descuento</label>
+                <input type="number" id="porcentaje" min="1" max="54" step="any" value="10" required>
+                <label for="categoria">Categoría</label>
+                <select id="categoria">
+                    <option value="">Todas</option>
+                    <option value="teclados">Teclados</option>
+                    <option value="ratones">Ratones</option>
+                    <option value="auriculares">Auriculares</option>
+                    <option value="componentes">Componentes</option>
+                    <option value="monitores">Monitores</option>
+                </select>
+                <button type="submit">Ejecutar procedimiento</button>
+            </form>
+        </div>
+
+        <div id="mensaje" class="mensaje oculto"></div>
+        <div id="resumen" class="tarjeta oculto"></div>
+        <table id="tabla" class="oculto">
+            <thead>
+                <tr><th>Producto</th><th>Precio original</th><th>Precio con descuento</th></tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
+        </table>
+    </main>
+    <script src="/recursos/menu.js"></script>
+    <script type="module" src="/js/procedimiento.js"></script>
+</body>
+</html>
